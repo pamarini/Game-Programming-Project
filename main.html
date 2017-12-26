@@ -1,0 +1,52 @@
+<!-- PETER MARINIS
+0571213
+-->
+
+<html lang="en-US">
+<head>
+	<title>Sky Bounce</title>
+</head>
+<body>
+	<div class="container">
+	
+		<canvas id="canvas"></canvas>
+
+		<!-- MAIN MENU -->
+		<div id="mainMenu">
+			<h1><b>SKY BOUNCE</b></h1>
+			<p class="info">
+				<h4>Use <- -> to move and space to restart</h4>
+				<h5> by: Peter Marinis</h5>
+			</p>
+
+			<div id="highScore"><p><iframe src = "highScore.txt" width = 150 height=120></iframe></p></div>
+
+			<a class="button" href="javascript:init()"><u><b>START</b></u></a>
+		</div>
+		
+
+		<!-- GAME OVER MENU -->
+		<div id="gameOverMenu">
+			<h1>Game Over!</h1>
+			<h2 id="go_score">you scored 0 points</h2>
+			
+			<div id="highScore"><p><iframe src = "highScore.txt" width = 150 height=120> </iframe></p></div>
+
+			<a class="button" href="javascript:reset()">Restart</a>
+			
+		</div>
+		
+		
+		<!-- Pre-loading image -->
+		<img id="sprite" src="arrow.png"/>
+		
+	 <script src="main.js"></script> 
+	
+<head>
+ <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+
+		<div id="scoreBoard">
+			<p id="score">0</p>
+		</div>
